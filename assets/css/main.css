@@ -12,17 +12,12 @@
   --color-secondary: #f85a40;
 }
 
-/* Smooth scroll behavior */
 :root {
   scroll-behavior: smooth;
 }
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: var(--font-default);
-  color: var(--color-default);
 }
 
 a {
@@ -42,16 +37,6 @@ h4,
 h5,
 h6 {
   font-family: var(--font-primary);
-}
-
-/*--------------------------------------------------------------
-# Sections & Section Header
---------------------------------------------------------------*/
-section {
-  padding: 60px 0;
-  overflow: hidden;
-  scroll-margin-top: 70px;
-  overflow: clip;
 }
 
 .sections-bg {
@@ -83,15 +68,6 @@ section {
   bottom: 0;
   margin: auto;
 }
-
-.section-header p {
-  margin-bottom: 0;
-  color: #6f6f6f;
-}
-
-/*--------------------------------------------------------------
-# Breadcrumbs
---------------------------------------------------------------*/
 .breadcrumbs .page-header {
   padding: 60px 0 60px 0;
   min-height: 20vh;
@@ -131,24 +107,12 @@ section {
   transition: 0.3s;
 }
 
-.breadcrumbs nav ol a:hover {
-  text-decoration: underline;
-}
-
-.breadcrumbs nav ol li+li {
-  padding-left: 10px;
-}
-
 .breadcrumbs nav ol li+li::before {
   display: inline-block;
   padding-right: 10px;
   color: var(--color-secondary);
   content: "/";
 }
-
-/*--------------------------------------------------------------
-# Scroll top button
---------------------------------------------------------------*/
 .scroll-top {
   position: fixed;
   visibility: hidden;
@@ -180,16 +144,8 @@ section {
   bottom: 15px;
 }
 
-/*--------------------------------------------------------------
-# Preloader
---------------------------------------------------------------*/
 #preloader {
-  position: fixed;
-  inset: 0;
   z-index: 999999;
-  overflow: hidden;
-  background: #fff;
-  transition: all 0.6s ease-out;
 }
 
 #preloader:before {
@@ -215,18 +171,12 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 .topbar {
   background: #00796b;
   height: 40px;
@@ -315,9 +265,6 @@ section {
   margin-top: 70px;
 }
 
-/*--------------------------------------------------------------
-# Desktop Navigation
---------------------------------------------------------------*/
 @media (min-width: 1280px) {
   .navbar {
     padding: 0;
@@ -1984,19 +1931,6 @@ section {
   background: #009786;
 }
 
-.hero .icon-box:hover .title a,
-.hero .icon-box:hover .icon {
-  color: #fff;
-}
-
-/*--------------------------------------------------------------
-# Blog
---------------------------------------------------------------*/
-.blog .blog-pagination {
-  margin-top: 30px;
-  color: #555555;
-}
-
 .blog .blog-pagination ul {
   display: flex;
   padding: 0;
@@ -2085,9 +2019,6 @@ section {
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Blog Details
---------------------------------------------------------------*/
 .blog .blog-details {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -2255,24 +2186,12 @@ section {
   color: var(--color-default);
 }
 
-.blog .post-author .social-links {
-  margin: 0 10px 10px 0;
-}
-
-.blog .post-author .social-links a {
-  color: rgba(34, 34, 34, 0.5);
-  margin-right: 5px;
-}
-
 .blog .post-author p {
   font-style: italic;
   color: rgba(108, 117, 125, 0.8);
   margin-bottom: 0;
 }
 
-/*--------------------------------------------------------------
-# Blog Sidebar
---------------------------------------------------------------*/
 .blog .sidebar {
   padding: 30px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
@@ -2304,10 +2223,6 @@ section {
   padding: 4px;
   border-radius: 50px;
   width: calc(100% - 60px);
-}
-
-.blog .sidebar .search-form form input[type=text]:focus {
-  outline: none;
 }
 
 .blog .sidebar .search-form form button {
@@ -2425,11 +2340,7 @@ section {
   padding-left: 5px;
   color: rgba(85, 85, 85, 0.8);
   font-size: 14px;
-}
-
-/*--------------------------------------------------------------
-# Blog Comments
---------------------------------------------------------------*/
+} 
 .blog .comments {
   margin-top: 30px;
 }
@@ -2536,12 +2447,9 @@ section {
 }
 
 .blog .comments .reply-form .btn-primary:hover {
-  background-color: rgba(248, 90, 64, 0.8);
+  background-color: rgba(246, 85, 60, 0.8);
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
 .footer {
   font-size: 14px;
   background-color: var(--color-primary);
@@ -2621,10 +2529,6 @@ section {
   align-items: center;
 }
 
-.footer .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
 .footer .footer-links ul a {
   color: rgba(255, 255, 255, 0.7);
   transition: 0.3s;
@@ -2636,10 +2540,6 @@ section {
   color: #fff;
 }
 
-.footer .footer-contact p {
-  line-height: 26px;
-}
-
 .footer .copyright {
   text-align: center;
 }
@@ -2648,8 +2548,4 @@ section {
   padding-top: 4px;
   text-align: center;
   font-size: 13px;
-}
-
-.footer .credits a {
-  color: #fff;
 }
